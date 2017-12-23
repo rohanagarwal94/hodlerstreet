@@ -1,0 +1,11 @@
+<!--翻页
+<%- partial('_partial/post', {post: page, index: false}) %> -->
+
+
+<% if (page.source == 'about/index.md') { %>
+    <%- partial('about') %>
+<% } else if(page.source == 'works/index.md') { %>
+    <%- partial('works') %>
+<% } else { %>
+    <%- partial('_partial/post', {post: page, index: false}) %>
+<% } %>
