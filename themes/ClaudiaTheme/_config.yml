@@ -1,11 +1,14 @@
 # Header
 menu:
   Home: /
-  Bitcoins: /
-  ICO: /
-  My Works: /works
-  About: /about
+  About Us: /about
+  Cryptocurrency: /crypto
+  ICO: /ico
+  Altcoin: /altcoin
+  Bitcoin: /bitcoin
   Tags: /tags
+  Categories: /categories
+  Contact Us: /contact
 
 rss: /atom.xml
 
@@ -23,9 +26,9 @@ user_introduction: "《掷铁饼者》（希腊语：Δισκοβόλος, 拉�
 github_username: haojen
 twitter_username: ehazon
 weibo_username:
-zhihu_username: margretz
-facebook_username:
-linkedin_username:
+zhihu_username: 
+facebook_username: profile.php?id=100007424826933
+linkedin_username: mohit-gupta-992759136/
 
 # Content
 excerpt_link: Read More

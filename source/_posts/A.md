@@ -1,13 +1,9 @@
 title: A's TITLE
-tags:
-  - Tag1
-  - Tag2
-  - Tag3
+tags: [Tag1, Tag2, Tag3, Technology, Biology]
 categories:
-  - Cat1
-  - Cat2
-  - Cat3
-  - Cat1.1
+  - [Cat1]
+  - [Cat2]
+  - [Cat3]
 author: Mohit Gupta
 date: 2017-12-25 16:42:00
 ---

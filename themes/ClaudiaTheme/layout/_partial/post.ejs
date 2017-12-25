@@ -9,8 +9,11 @@
     .post-box {
         padding: 15px;
         padding-top: 60px;
+        padding-left: 30px;
         min-height: 80vh;
         margin-top: -200px;
+        /* margin-left: 100px;
+        margin-right: 100px; */
         border-radius: 4px;
         background-color: rgba(255,255,255,.8);
     }
@@ -28,7 +31,9 @@
     img[alt="post-cover"] {
         display: none;
     }
+    
 </style>
+<%- partial('_partial/social') %>
 <header>
     <div id="header_box" class="header-box"></div>
 </header>
@@ -46,17 +51,18 @@
                 <span style="padding:0 10px;"> <span class="sub-title">By</span> <%- post.author%></span>
                 <span class="post-date sub-title">at: <%= post.date.format(config.date_format) %></span>
             </div>
-            <% if(post.tags){%>
-                <div>
-                    <% post.tags.forEach(function(tag){%>
-                         <a class="tag is-post-tag" href="<%- config.root + tag.path %>"><%- tag.name %></a>
-                    <%})%>
-                </div>
-            <%}%>
+            
         </div>
         <div class="content" style="overflow: auto">
             <%- post.content %>
         </div>
+        <% if(post.tags){%><br>
+            <div class="tag">
+                <% post.tags.forEach(function(tag){%>
+                     <a class="tag is-post-tag" href="<%- config.root + tag.path %>"><%- tag.name %></a>
+                <%})%>
+            </div>
+        <%}%>
         <div class="post-reply">
             <% if (theme.use_livere){%>
                 <!-- 来必力City版安装代码 -->
