@@ -59,7 +59,7 @@
 </style>
 <aside class="column is-hidden-touch is-3" style="max-width: 280px; min-width: 230px">
     <div class="content-box user-info">
-        <div class="has-padding">
+        <!--<div class="has-padding">
             <header class="has-text-centered">
                 <img class="avatar" src="<%= theme.user_avatar || config["sidebar-avatar"] %>">
             </header>
@@ -73,7 +73,7 @@
                 </p>
                 <%}%>
             </section>
-        </div>
+        </div>-->
         <div class="top-line">
             <ul class="sns-container justify-center is-flex has-padding">
                 <% if (false && config.RSS) { %>
@@ -155,8 +155,8 @@
             </ul>
         </div>
     </div>
-    <div class="content-box">
-        <!--post数量和tag category 数量-->
+    <!--div class="content-box">
+        <!--post数量和tag category 数量
         <div class="site-box is-flex">
             <div class="flex-1 is-flex flex-column center full-height right-line">
                 <strong><%- site.posts.length || ''%></strong>

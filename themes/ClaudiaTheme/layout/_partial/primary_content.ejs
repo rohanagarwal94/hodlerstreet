@@ -19,18 +19,18 @@
                         <h1 class="title text-shadow" style="margin-bottom: 15px;">
                             <%- truncate(strip_html(firstArticle.title || defaultTitle), {length: 50, omission: '..'}) %>
                         </h1>
-                        <div>
-                        <% if (firstArticle.tags){%>
-                            <% firstArticle.tags.forEach(function(tag){%>`
-                                <span class="tag is-post-tag"><%- tag.name %></span>
-                            <%})%>
-                        <%}%>
-                        </div>
                         <p class="post-content-text is-marginless has-padding text-shadow">
                             <%- truncate(strip_html(firstArticle.content), {length: 120, omission: '..'}) %>
                         </p>
                         <p class="date text-shadow"><%- firstArticle.date.format(config.date_format) %></p>
                         <button class="button is-info is-small">Read More</button>
+                        <div>
+                            <% if (firstArticle.tags){%><br>
+                                <% firstArticle.tags.forEach(function(tag){%>`
+                                    <span class="tag is-post-tag"><%- tag.name %></span>
+                                <%})%>
+                            <%}%>
+                        </div>
                     </div>
             </div>
         </a>
