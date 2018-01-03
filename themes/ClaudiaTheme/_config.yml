@@ -46,18 +46,18 @@ fancybox: true
 
 # 评论系统
 # 不要用别人的 uid, 自己去注册一个吧
-use_livere: true
+use_livere: false
 livere_uid: MTAyMC8yOTE4Ni81NzUz
 
-use_disqus: false
-disqus_url: https://haojen.disqus.com/embed.js
+use_disqus: true
+disqus_url: https://hodlerstreet.disqus.com/embed.js
 
 # Miscellaneous
 google_analytics:
 favicon: /favicon.png
-#twitter:
-#google_plus:
-#fb_admins:
-#fb_app_id:
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
 
 

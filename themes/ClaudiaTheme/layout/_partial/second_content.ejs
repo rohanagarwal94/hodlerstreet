@@ -10,7 +10,7 @@
                 <%- truncate(strip_html(article.content), {length: 50, omission: '..'}) %>
             </p>
             <p class="date text-shadow is-marginless"><%- article.date.format(config.date_format) %></p>
-            <% if (article.tags){%><br>
+            <% if (article.tags){%>
                 <% article.tags.forEach(function(tag){%>
                     <span class="tag is-post-tag"><%- tag.name %></span>
                 <%})%>

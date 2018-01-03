@@ -88,3 +88,5 @@ admin:
 search:
   path: search.xml
   field: all
+
+disqus_shortname: hodlerstreet
