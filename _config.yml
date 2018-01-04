@@ -78,3 +78,9 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# hexo-admin authentification
+admin:
+  username: rsr
+  password_hash: $2a$10$ircWg9txk.G.V1a.6wcnLuUllhozVy/pF1ETILQsAJwlSziYZvo6u
+  secret: delhi
