@@ -24,7 +24,7 @@ customize:
     highlight: monokai
     sidebar: right # sidebar position, options: left, right or leave it empty
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: # path to favicon
+    favicon: css/images/avatar.png
     social_links:
         github: https://github.com/rohanagarwal94/
         twitter: https://twitter.com/HodlerStreet?s=08/
