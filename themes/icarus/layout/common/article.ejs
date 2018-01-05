@@ -36,17 +36,19 @@
         <footer class="article-footer">
            <div style="color : #38b7ea;"> <u> Related posts</u></div><br>
             <%-popular_posts( {} , post ) %>
+            
             <%- partial('share/index', { post: post }) %>
             <%- partial('comment/counter', { post: post }) %>
         </footer>
         
     </div>
-    <% if (!index) { %>
-        <%- partial('post/nav') %>
-    <% } %>
+    
 </article>
 
 <% if (!index) { %>
     <%- partial('comment/index') %>
+<% } %>
+<% if (!index) { %>
+    <%- partial('post/nav') %>
 <% } %>
 
