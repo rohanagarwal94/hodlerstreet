@@ -1,3 +1,9 @@
+<style>
+    a.L:hover {
+        color:white;
+    }
+</style>
+
 <header id="header">
     <div id="header-main" class="header-inner">
         <div class="outer">
@@ -7,7 +13,7 @@
             </a>
             <nav id="main-nav">
                 <% for (var i in theme.menu) { %>
-                        <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                        <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>" class="L"><%= i %></a>
                 <% } %>
             </nav>
             <% if(theme.customize.profile && theme.customize.profile.enabled) { %>
@@ -25,35 +31,12 @@
         </div>
     </div>
     <div  id="main-nav-mobile" class="header-sub header-inner">
-        <!-- <ul class="nav navbar-nav">
-            <% for (var i in theme.menu) { %>
-                <% if(i!="menumore") { %>
-                    <li><a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-                <% } %>
-            <% } %>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <%= __('More') %> 
-                    <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <% for (var j in theme.menu.menumore) {%>
-                        <li><a href="<%- url_for(theme.menu.menumore[j]) %>"><%= j %></a></li><br>
-                    <% } %>
-                </ul>
-            </li>
-        </ul> -->
-
-
-
-
-        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-shrink" style="margin-bottom:0px;">
                 
             <!-- <div class="container"> -->
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div style="background-color: #FBEA74;" class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="float:left;margin-left:10px;">
+                <div style="background-color: #101820" class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="float:left;margin-left:10px;border:none;">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
