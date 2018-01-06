@@ -1,1 +1,10 @@
-<%- partial('common/article', { post: page }) %>
+<!-- <%- partial('common/article', { post: page }) %> -->
+
+
+<% if (page.source == 'about/index.md') { %>
+    <%- partial('about') %>
+<% } else if(page.source == 'coming/index.md'){ %>
+    <%- partial('coming') %>
+<% } else{ %>
+    <%- partial('common/article', { post: page }) %>
+<% } %>
