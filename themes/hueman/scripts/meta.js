@@ -37,3 +37,4 @@ hexo.extend.helper.register('meta', function (post) {
     });
     return metaDOMArray.join('\n');
 });
+
