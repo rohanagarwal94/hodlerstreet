@@ -1,0 +1,13 @@
+<% if (page.source == 'about/index.md') { %>
+    <%- partial('about') %>
+<% } else if(page.source == 'works/index.md') { %>
+    <%- partial('works') %>
+<% } else if(page.source == 'contact/index.md'){ %>
+    <%- partial('contact') %>
+<% } else if(page.source == 'tags/index.md'){ %>
+    <%- partial('tags') %>
+<% } else if(page.source == 'categories/index.md'){ %>
+    <%- partial('categories') %>
+<% } else{ %>
+    <%- partial('_partial/post', {post: page, index: false}) %>
+<% } %>
