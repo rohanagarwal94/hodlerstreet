@@ -15,7 +15,7 @@ customize:
     highlight: androidstudio
     sidebar: left # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: # path to favicon
+    favicon: images/logo-header.png
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
         twitter: /
         facebook: /
@@ -41,7 +41,7 @@ search:
 
 # Comment
 comment:
-    disqus: hexo-theme-hueman # enter disqus shortname here
+    disqus: hodlerstreet # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
     facebook: # enter true to enable
