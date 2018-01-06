@@ -17,12 +17,12 @@ customize:
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: css/images/favicon.png
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
-        twitter: /
-        facebook: /
+        twitter: https://twitter.com/HodlerStreet?s=08/
+        facebook: https://www.facebook.com/HodlerStreet-140304686747346//
         google-plus: /
-        github: https://github.com/ppoffice/hexo-theme-hueman
-        weibo: /
-        rss: /
+        github: https://github.com/rohanagarwal94/
+        # weibo: /
+        # rss: /
 
 # Widgets
 widgets:
