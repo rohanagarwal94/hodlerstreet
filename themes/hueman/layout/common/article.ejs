@@ -16,6 +16,10 @@
             <%- post.content %>
         </div>
         <footer class="article-footer">
+            <b>Related Posts</b><br>   
+            <%-
+                popular_posts( {} , post )
+              %>
             <%- partial('share/index', { post: post }) %>
         </footer>
     </div>
