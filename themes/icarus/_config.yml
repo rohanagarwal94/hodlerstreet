@@ -1,10 +1,15 @@
 # Menus
 menu:
-  Home: .
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  About: about
+    Home: .
+    About: about
+    Cryptocurrency: /crypto
+    ICO: /ico
+    Altcoin: /altcoin
+    Bitcoin: /bitcoin
+    Categories: categories
+    Tags: tags
+    Archives: archives
+    Contact Us: /contact
 
 # Customize
 customize:
