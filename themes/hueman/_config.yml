@@ -17,7 +17,7 @@ customize:
         width: 165
         height: 60
         url: images/logo-header.png
-    theme_color: '#006bde'
+    theme_color: '#8d6e36'
     highlight: androidstudio
     sidebar: left # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
