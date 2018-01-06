@@ -30,12 +30,13 @@
                     </div>
                 <% } %>
                 <%- post.content %>
-                
+                <footer class="article-footer">
+                        <div style="color : #38b7ea;"> <u> Related posts</u></div><br>
+                        <%-popular_posts( {} , post ) %>
+                </footer>
             <% } %>
         </div>
-        <footer class="article-footer">
-                <div style="color : #38b7ea;"> <u> Related posts</u></div><br>
-                <%-popular_posts( {} , post ) %>
+        <footer class="article-footer" style="border-top:1px solid #ccc;">
             <%- partial('share/index', { post: post }) %>
             <%- partial('comment/counter', { post: post }) %>
         </footer>

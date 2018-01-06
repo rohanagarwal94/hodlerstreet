@@ -1,7 +1,15 @@
+<style>
+    #Search {
+        border: none;
+        background-color: #2b3035;
+        color: white;
+    }
+</style>
+
 <div id="search-form-wrap">
 <% if (theme.search.insight) { %>
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="<%= __('index.search') %>" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="<%= __('index.search') %>" style="border-radius:5px;background: display !important"/>
         <button type="submit" class="search-form-submit"></button>
     </form>
     <%- partial('search/insight') %>
