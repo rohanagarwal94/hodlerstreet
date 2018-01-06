@@ -4,6 +4,13 @@ menu:
     # Delete this row if you don't want categories in your header nav bar
     Categories:
     About: /about/index.html
+    Cryptocurrency: /crypto
+    ICO: /ico
+    Altcoin: /altcoin
+    Bitcoin: /bitcoin
+    Tags: /tags
+    Archives: /archives
+    Contact Us: /contact
 
 # Customize
 customize:
