@@ -4,11 +4,6 @@ menu:
     # Delete this row if you don't want categories in your header nav bar
     Categories:
     About: /about/index.html
-    Cryptocurrency: /coming/index.html
-    ICO: /coming/index.html
-    Altcoin: /coming/index.html
-    Bitcoin: /coming/index.html
-    Archives: /coming/index.html
     Contact Us: /coming/index.html
 
 # Customize
@@ -25,8 +20,9 @@ customize:
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
         twitter: https://twitter.com/HodlerStreet?s=08/
         facebook: https://www.facebook.com/HodlerStreet-140304686747346//
-        google-plus: /
-        github: https://github.com/rohanagarwal94/
+        instagram: /
+        google-plus:
+        github:
         # weibo: /
         # rss: /
 

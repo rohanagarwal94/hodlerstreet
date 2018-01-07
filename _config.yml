@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hodler Street
-subtitle: Hodler Street
+title: HodlerStreet
+subtitle: HodlerStreet
 description:
-author: Hodler Street
+author:
 language: en
 timezone:
 
@@ -80,7 +80,7 @@ deploy:
   type:
 
 # hexo-admin authentification
-admin:
-  username: Mohit.Gupta
-  password_hash: $2a$10$BcrtLa7Kga4XvdtI3kz7y.EcfNA9ALaP7nC1Nia0g/XnhtbKbeOXC
-  secret: delhi
+# admin:
+#   username: Mohit.Gupta
+#   password_hash: $2a$10$BcrtLa7Kga4XvdtI3kz7y.EcfNA9ALaP7nC1Nia0g/XnhtbKbeOXC
+#   secret: delhi
