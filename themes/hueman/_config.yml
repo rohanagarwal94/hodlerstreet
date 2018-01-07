@@ -23,8 +23,8 @@ customize:
         instagram: /
         google-plus:
         github:
-        weibo: /
-        rss: /
+        weibo:
+        rss:
 
 # Widgets
 widgets:
