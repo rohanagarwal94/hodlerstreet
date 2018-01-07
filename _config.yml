@@ -77,7 +77,8 @@ theme: hueman
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/rahulrawat1210/rahulrawat1210.github.io.git
 
 # hexo-admin authentification
 admin:
