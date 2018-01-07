@@ -19,7 +19,7 @@ customize:
     favicon: css/images/favicon.png
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
         twitter: https://twitter.com/HodlerStreet?s=08/
-        facebook: https://www.facebook.com/HodlerStreet-140304686747346//
+        facebook: https://www.facebook.com/HodlerStreet-140304686747346/
         instagram: /
         google-plus:
         github:
@@ -34,6 +34,7 @@ widgets:
     - tag
     - tagcloud
     - links
+    - adsense
 
 # Search
 search:
