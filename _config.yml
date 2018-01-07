@@ -82,6 +82,9 @@ deploy:
 
 # hexo-admin authentification
 admin:
-  username: HS
-  password_hash: $2a$10$sA5W0mV.JarzdR4JO38rzeZdqIYbIEkHLiye6j7RVGw7JdRSeQo0u
-  secret: delhi
+  username: rahul.rawat
+  password_hash: $2a$10$NOlttJSKi6mDFTnBmTy8t.upDCmv6qzpY.1gq1TTlWlDRhBTDYlJa
+  secret: hodlerstreet
+
+metadata:
+  thumbnail:
