@@ -1643,7 +1643,7 @@ a.article-title:hover {
   line-height: 22px;
 }
 #footer .logo {
-  width: 132px;
+  margin: 0 auto;
   height: 48px;
   -webkit-background-size: 55px 55px;
   -moz-background-size: 55px 55px;
