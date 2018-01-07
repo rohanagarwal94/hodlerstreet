@@ -77,10 +77,8 @@ theme: hueman
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: heroku
-  repo: https://git.heroku.com/hodlerstreet.git
-  message: Deployment of Hexo blog to Heroku
-
+  type: git
+  repo: https://github.com/rahulrawat1210/rahulrawat1210.github.io.git
 
 # hexo-admin authentification
 admin:
