@@ -81,7 +81,7 @@ deploy:
   repo: https://github.com/rahulrawat1210/rahulrawat1210.github.io.git
 
 # hexo-admin authentification
-# admin:
-#   username: Mohit.Gupta
-#   password_hash: $2a$10$BcrtLa7Kga4XvdtI3kz7y.EcfNA9ALaP7nC1Nia0g/XnhtbKbeOXC
-#   secret: delhi
+admin:
+  username: HS
+  password_hash: $2a$10$sA5W0mV.JarzdR4JO38rzeZdqIYbIEkHLiye6j7RVGw7JdRSeQo0u
+  secret: delhi
