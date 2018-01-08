@@ -31,7 +31,7 @@ widgets:
     - recent_posts
     - category
     - archive
-    - tag
+    # - tag
     - tagcloud
     - links
     - adsense

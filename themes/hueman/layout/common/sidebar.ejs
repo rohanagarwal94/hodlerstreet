@@ -14,9 +14,11 @@
             <% } %>
         </ul>
     </div>
+
     <% if (is_post()) { %>
         <%- partial('post/nav', {post: page}) %>
     <% } %>
+    
     <div class="widgets-container">
         <% if (theme.widgets) { %>
             <% theme.widgets.forEach(function(widget) { %>
@@ -24,4 +26,5 @@
             <% }) %>
         <% } %>
     </div>
+    
 </aside>
