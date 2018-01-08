@@ -89,3 +89,12 @@ admin:
 metadata:
   thumbnail:
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
