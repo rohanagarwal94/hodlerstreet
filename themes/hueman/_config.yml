@@ -4,7 +4,7 @@ menu:
     # Delete this row if you don't want categories in your header nav bar
     Categories:
     About: /coming/index.html
-    Contact Us: /coming/index.html
+    Contact Us: /contact/index.html
 
 # Customize
 customize:

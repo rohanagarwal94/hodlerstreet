@@ -3,8 +3,8 @@
 
 <% if (page.source == 'about/index.md') { %>
     <%- partial('about') %>
-<% } else if(page.source == 'coming/index.md'){ %>
-    <%- partial('coming') %>
+<% } else if(page.source == 'contact/index.md'){ %>
+    <%- partial('contact') %>
 <% } else{ %>
     <%- partial('common/article', { post: page }) %>
 <% } %>
