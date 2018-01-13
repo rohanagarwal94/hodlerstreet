@@ -98,9 +98,7 @@
 /* ------------------------------------------------------------------------- *
  *    Mobile (Low Res) : 479px > 0 (320px)
 /* ------------------------------------------------------------------------- */
-@media only screen and (max-width: 479px)
-    .container
-        padding: 0px
+@media only screen and (max-width: 339px)
     #header
         .logo-wrap
             width: 100%
@@ -112,6 +110,17 @@
             display: block
             width: 100%
             margin-left: 0px
+@media only screen and (max-width: 382px) and (min-width: 340px)
+    #header
+        #header-title
+            padding: 10px 7px
+        .subtitle-wrap
+            margin-left: 10px
+
+@media only screen and (max-width: 479px)
+    .container
+        padding: 0px
+    #header
         .nav-container
             padding: 0px
             #main-nav-toggle
