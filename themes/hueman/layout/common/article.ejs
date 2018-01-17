@@ -8,7 +8,7 @@
         <% if (post.layout != 'page') { %>
             <div class="article-meta">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-                <% if(post.author){ %>By <b><%- post.author %></b><%}%>
+                <% if(post.author){ %>By <b><%- post.author %></b><br><%}%>
                 <%- partial('post/tag') %>
             </div>
         <% } %>
