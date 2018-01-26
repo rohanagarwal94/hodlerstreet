@@ -24,7 +24,8 @@ customize:
         google-plus:
         github:
         weibo:
-        rss:
+        linkedin: https://www.linkedin.com/company/13626423/
+        rss: https://hodlerstreet.com/atom.xml        
 
 # Widgets
 widgets:
