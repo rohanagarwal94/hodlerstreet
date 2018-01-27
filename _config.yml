@@ -111,7 +111,7 @@ pwa:
           type: image/png
       display: standalone
       start_url: "."
-
+      background_color: "#8d6e36"
   serviceWorker:
     path: /sw.js
     preload:
