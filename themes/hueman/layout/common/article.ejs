@@ -37,6 +37,9 @@
                 <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
+
+       
+
         <% if (post.layout != 'page') { %>
             <div class="article-meta">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
@@ -45,6 +48,10 @@
             </div>
         <% } %>
         <%- partial('post/gallery') %>
+
+       <b>
+            <span class="post-count">Words : <%= wordcount(post.content) %></span>   <br>
+            <%- readingTime(page.content) %></b>
         <div class="article-entry" itemprop="articleBody">
             <%- post.content %>
         </div>
