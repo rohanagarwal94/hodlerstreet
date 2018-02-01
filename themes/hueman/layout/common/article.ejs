@@ -15,9 +15,21 @@
         height: 300px;
     }
     .about-content {
-        color: #555;
         overflow: hidden;
         padding: 20px;
+    }
+    .about-content h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 60px;
+    }
+    .about-content span {
+        font-weight: 300;
+        line-height: 22px;
+        color: #aaa;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
     }
     @media only screen and (max-width: 700px) {
         .img {
@@ -27,6 +39,9 @@
     @media only screen and (max-width: 480px) {
         .img {
             width: 100%;
+        }
+        .about-content {
+            text-align: justify;
         }
     }
 </style>
@@ -70,15 +85,16 @@
               %>
             <%- partial('share/index', { post: post }) %>
         </footer>
-        <div class="about-author">
+        <!-- <div class="about-author">
             <div class="img">
-                <img src="https://www.dropbox.com/s/o1tlgfywx7wwoah/p5img1.jpg?raw=1" alt="" style="width:100%;height:100%;">
+                <img src="https://www.dropbox.com/s/g1o4ausotso92ws/Rohan.jpg?raw=1" alt="" style="width:100%;height:100%;">
             </div>
             <div class="about-content">
-                <h1 style="font-size:35px;">About Author</h1><br>
-                <p style="font-size:22px;">hjfbsahlshfsdf blsdhbfdbf hjbfhjd fjd vbsd fhjsdf bsdf dsjf sdhb fsbfjsbf hdbfjbsd jbsdiufbsdjv sdkjbfsjfv j b dubvda fkjsbf</p>
+                <h2>About Author</h2><br>
+                <span>hjfbsahlshfsdf blsdhbfdbf hjbfhjd fjd vbsd fhjsdf bsdf dsjf sdhb fsbfjsbf hdbfjbsd jbsdiufbsdjv sdkjbfsjfv j b dubvda fkjsbf</span>
             </div>
-        </div>
+        </div> -->
+        <!-- {% githubCard user: MohitGupta913 %} -->
     </div>
 </article>
 <%- partial('comment/index') %>
