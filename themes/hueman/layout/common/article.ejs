@@ -81,8 +81,10 @@
                         
             <br>   
             <%-
-                popular_posts( {} , post )
-              %>
+            htmlGenerator( 
+                popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' , PPMixingRate: 0.0 , isDate: true , isImage: true , isExcerpt: true} , post )
+            )
+        %>
             <%- partial('share/index', { post: post }) %>
         </footer>
         <% if(post.author && post.profilelink){ %>
