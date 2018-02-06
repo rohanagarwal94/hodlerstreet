@@ -81,20 +81,13 @@
                         
             <br>   
             <%-
-                popular_posts( {} , post )
-              %>
+            htmlGenerator( 
+                popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' , PPMixingRate: 0.0 , isDate: true , isImage: true , isExcerpt: true} , post )
+            )
+        %>
             <%- partial('share/index', { post: post }) %>
         </footer>
-        <!-- <div class="about-author">
-            <div class="img">
-                <img src="https://www.dropbox.com/s/g1o4ausotso92ws/Rohan.jpg?raw=1" alt="" style="width:100%;height:100%;">
-            </div>
-            <div class="about-content">
-                <h2>About Author</h2><br>
-                <span>hjfbsahlshfsdf blsdhbfdbf hjbfhjd fjd vbsd fhjsdf bsdf dsjf sdhb fsbfjsbf hdbfjbsd jbsdiufbsdjv sdkjbfsjfv j b dubvda fkjsbf</span>
-            </div>
-        </div> -->
-        <!-- {% githubCard user: MohitGupta913 %} -->
+        
     </div>
 </article>
 <%- partial('comment/index') %>
