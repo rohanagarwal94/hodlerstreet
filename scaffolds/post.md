@@ -5,4 +5,6 @@ date: {{ date }}
 tags:
 categories:
 thumbnail:
+profilelink:
+authordesc:
 ---
