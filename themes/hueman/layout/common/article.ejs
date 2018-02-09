@@ -85,6 +85,9 @@
                 popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' , PPMixingRate: 0.0 , isDate: true , isImage: true , isExcerpt: true} , post )
             )
         %>
+        This post's Visitor Counts is 
+        <%- popular_posts_pv(post) %> 
+        views.
             <%- partial('share/index', { post: post }) %>
         </footer>
         
