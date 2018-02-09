@@ -87,10 +87,6 @@
         %>
             <%- partial('share/index', { post: post }) %>
         </footer>
-        <% if(post.author && post.profilelink){ %>
-        <blockquote class="embedly-card" data-card-controls="0"><h4><a href="<%- post.profilelink %>"><%- post.author %> | Professional Profile | LinkedIn</a></h4><p><%- post.authordesc %></p></blockquote>
-        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-        <% } %>
     </div>
 </article>
 <%- partial('comment/index') %>
