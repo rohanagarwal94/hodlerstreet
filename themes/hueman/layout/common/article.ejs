@@ -58,15 +58,13 @@
         <% if (post.layout != 'page') { %>
             <div class="article-meta">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-                <% if(post.author){ %>By <b><%- post.author %></b><br><%}%>
+                <% if(post.author){ %>By <b><%- post.author %></b><%}%><br>
+                <span class="post-count">Words : <%= wordcount(post.content) %>,  </span>
+                <%- readingTime(page.content) %><br>
                 <%- partial('post/tag') %>
             </div>
         <% } %>
         <%- partial('post/gallery') %>
-
-       <b>
-            <span class="post-count">Words : <%= wordcount(post.content) %></span>   <br>
-            <%- readingTime(page.content) %></b>
         <div class="article-entry" itemprop="articleBody">
             <%- post.content %>
         </div>
