@@ -111,13 +111,9 @@ pwa:
           type: image/png
       display: standalone
       start_url: "."
-<<<<<<< HEAD
       gcm_sender_id: "482941778795"
       gcm_sender_id_comment: "Do not change the GCM Sender ID"
-
-=======
       background_color: "#8d6e36"
->>>>>>> 7add1e16786f1e53893ab64cfdfa693c4b309aa8
   serviceWorker:
     path: /sw.js
     preload:
