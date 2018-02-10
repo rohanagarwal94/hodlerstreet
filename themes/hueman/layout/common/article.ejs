@@ -1,3 +1,50 @@
+<style>
+    .about-author {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        height:auto;
+        overflow:auto;
+        overflow-y: hidden;
+        width: 100%;
+        margin-top: 20px;
+        box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    }
+    .img {
+        float:left;
+        width: 30%;
+        height: 300px;
+    }
+    .about-content {
+        overflow: hidden;
+        padding: 20px;
+    }
+    .about-content h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 60px;
+    }
+    .about-content span {
+        font-weight: 300;
+        line-height: 22px;
+        color: #aaa;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 700px) {
+        .img {
+            width: 50%;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .img {
+            width: 100%;
+        }
+        .about-content {
+            text-align: justify;
+        }
+    }
+</style>
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-single article-type-<%= post.layout %><%= (post.direction && post.direction.toLowerCase() === 'rtl' ? ' rtl' : '') %>" itemscope itemprop="blogPost">
     <div class="article-inner">
         <% if (post.link || post.title) { %>
@@ -5,10 +52,15 @@
                 <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
+
+       
+
         <% if (post.layout != 'page') { %>
             <div class="article-meta">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-                <% if(post.author){ %>By <b><%- post.author %></b><br><%}%>
+                <% if(post.author){ %>By <b><%- post.author %></b><%}%><br>
+                <span class="post-count">Words : <%= wordcount(post.content) %>,  </span>
+                <%- readingTime(page.content) %><br>
                 <%- partial('post/tag') %>
             </div>
         <% } %>
@@ -27,8 +79,13 @@
                         
             <br>   
             <%-
-                popular_posts( {} , post )
-              %>
+            htmlGenerator( 
+                popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' , PPMixingRate: 0.0 , isDate: true , isImage: true , isExcerpt: true} , post )
+            )
+        %>
+        This post's Visitor Counts is 
+        <%- popular_posts_pv(post) %> 
+        views.
             <%- partial('share/index', { post: post }) %>
         </footer>
     </div>
