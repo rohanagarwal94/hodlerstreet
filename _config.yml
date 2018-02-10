@@ -111,6 +111,8 @@ pwa:
           type: image/png
       display: standalone
       start_url: "."
+      gcm_sender_id: "482941778795"
+      gcm_sender_id_comment: "Do not change the GCM Sender ID"
 
   serviceWorker:
     path: /sw.js
