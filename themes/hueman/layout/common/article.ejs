@@ -65,6 +65,15 @@
             </div>
         <% } %>
         <%- partial('post/gallery') %>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5407250245383049",
+            enable_page_level_ads: true
+        });
+        </script>
+
         <div class="article-entry" itemprop="articleBody">
             <%- post.content %>
         </div>
@@ -83,11 +92,16 @@
                 popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' , PPMixingRate: 0.0 , isDate: true , isImage: true , isExcerpt: true} , post )
             )
         %>
-        This post's Visitor Counts is 
-        <%- popular_posts_pv(post) %> 
-        views.
             <%- partial('share/index', { post: post }) %>
         </footer>
     </div>
 </article>
 <%- partial('comment/index') %>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5407250245383049",
+    enable_page_level_ads: true
+  });
+</script>
