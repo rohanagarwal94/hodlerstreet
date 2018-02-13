@@ -111,6 +111,8 @@ pwa:
           type: image/png
       display: standalone
       start_url: "."
+      gcm_sender_id: "482941778795"
+      gcm_sender_id_comment: "Do not change the GCM Sender ID"
       background_color: "#8d6e36"
   serviceWorker:
     path: /sw.js
@@ -161,8 +163,8 @@ popularPosts:
   googleAnalyticsAPI:
     clientId: 338280069805-cab91o7j4uccm2fd4klrf9b54390156s.apps.googleusercontent.com
     serviceEmail: hodlerstreet@hodlerstreet-192206.iam.gserviceaccount.com
-    key: AIzaSyBE6E55I5UJKoepXGdq7y7zzXRkReuLEpw
-    viewId: 12345678
+    key: /HodlerStreet-f840e68d7180.pem
+    viewId: 167398816
     dateRange: 30       # (Optional) The period you want to get by Google Analytics page view. Default = 30
     expiresDate: 10     # (optional) Expiration date of cache file. Default = 10
     pvMeasurementsStartDate: 2018/01/01

