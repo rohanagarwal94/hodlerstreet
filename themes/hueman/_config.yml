@@ -2,8 +2,10 @@
 menu:
     Home: /
     # Delete this row if you don't want categories in your header nav bar
-    Categories:
+    Store: /store/index.html
     About Us: /about/index.html
+    Categories:
+    
     
 
 # Customize

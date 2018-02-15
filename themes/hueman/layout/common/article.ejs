@@ -52,8 +52,7 @@
                 <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
-
-       
+     
 
         <% if (post.layout != 'page') { %>
             <div class="article-meta">
@@ -65,9 +64,33 @@
             </div>
         <% } %>
         <%- partial('post/gallery') %>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- banner_responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5407250245383049"
+     data-ad-slot="3432346698"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
         <div class="article-entry" itemprop="articleBody">
             <%- post.content %>
         </div>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- banner_responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5407250245383049"
+     data-ad-slot="3432346698"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
         <footer class="article-footer">
                 <div class="a2a_kit a2a_default_style">
                         <a class="a2a_button_facebook_like"></a>
@@ -83,7 +106,21 @@
                 popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' , PPMixingRate: 0.0 , isDate: true , isImage: true , isExcerpt: true} , post )
             )
         %>
+<<<<<<< HEAD
             <%- partial('share/index', { post: post }) %>
+=======
+                    <%- partial('share/index', { post: post }) %>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- banner_responsive -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-5407250245383049"
+                         data-ad-slot="3432346698"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+>>>>>>> da534d2c6a27d4dd7067682fc23722be0cb8d759
         </footer>
     </div>
 </article>
