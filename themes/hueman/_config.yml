@@ -2,7 +2,7 @@
 menu:
     Home: /
     # Delete this row if you don't want categories in your header nav bar
-    Store: /store/index.html
+    HodlerStore: /store/index.html
     About Us: /about/index.html
     Categories:
     
