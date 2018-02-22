@@ -94,10 +94,10 @@
 
 <script>
     $(function () {
-        $('div[id="show"]').slice(0, 4).css('display', 'inline-block');
+        $('div[id="show"]').slice(0, 6).css('display', 'inline-block');
         $("#loadMore").on('click', function (e) {
             e.preventDefault();
-            $('div[id="show"]:hidden').slice(0, 4).slideDown().css('display', 'inline-block');
+            $('div[id="show"]:hidden').slice(0, 6).slideDown().css('display', 'inline-block');
             if ($('div[id="show"]:hidden').length == 0) {
                 $("#loadMore").fadeOut('slow');
             }
