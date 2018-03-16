@@ -23,6 +23,14 @@ body
     font: font-size font-sans
     -webkit-text-size-adjust: 100%
 
+.lower
+    margin:10px
+    @media screen and (min-width: 600px)
+        float:left
+        width:33.33%
+    @media screen and (max-width: 599px)
+        width: 100%
+
 code
     margin: 0 2px
     color: #e96900
@@ -68,7 +76,6 @@ code
 
 .main-body-inner
     clearfix()
-    position: relative
     box-sizing: border-box
     box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px
     if sidebar is right
